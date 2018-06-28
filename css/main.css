@@ -7368,70 +7368,108 @@ td.visible-print {
   text-align: center;
 }
 
-.c-slide {
+.home .c-slide {
   width: 70%;
   height: auto;
   margin: 10px auto;
   overflow: hidden;
+  position: relative;
 }
-
-.slider-nav .slick-slide {
+.home .slider-nav .slick-slide {
   display: block;
   height: 350px;
   text-align: center;
   color: white;
 }
-.slider-nav.slick-initialized .slick-slide {
+.home .slider-nav.slick-initialized .slick-slide {
   display: inline-block;
 }
-
-.slider-thumbs {
+.home .slider-thumbs {
   display: none;
 }
-.slider-thumbs.slick-initialized {
+.home .slider-thumbs.slick-initialized {
   display: block;
 }
-.slider-thumbs.slick-initialized .slick-track {
+.home .slider-thumbs.slick-initialized .slick-track {
   position: relative;
 }
-.slider-thumbs.slick-initialized .slick-list {
+.home .slider-thumbs.slick-initialized .slick-list {
   margin: 15 -2px;
 }
-.slider-thumbs.slick-initialized .slick-slide {
+.home .slider-thumbs.slick-initialized .slick-slide {
   display: inline-block;
   float: none;
   border: 1px solid white;
   margin: 15px 2px;
 }
-.slider-thumbs.slick-initialized .slick-slide {
+.home .slider-thumbs.slick-initialized .slick-slide {
   height: auto;
   max-width: 100%;
   outline: none;
   background-color: red;
   text-align: center;
 }
-.slider-thumbs.slick-initialized .slick-current {
+.home .slider-thumbs.slick-initialized .slick-current {
   border: 1px solid blue;
 }
-
-.pre {
+.home .pre {
   width: 25px !important;
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: 30%;
   left: 0;
   z-index: 2;
   margin: auto;
 }
-
-.next {
+.home .next {
   width: 25px !important;
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: 30%;
   right: 0;
   z-index: 2;
   margin: auto;
+}
+.home .eventCarousal, .home .guestCarousal {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 50%;
+  overflow: hidden;
+}
+.home .slick-slide {
+  margin: 0 5px;
+}
+.home .slick-list {
+  margin: 0px -5px 0px -5px;
+}
+.home button.slick-next, .home button.slick-next:hover {
+  position: absolute;
+  top: 41%;
+  right: 54px;
+  width: 47px;
+  height: 75px;
+  background-image: url("http://maggiesadler.com/wp-content/uploads/2015/10/left-right-arrow.png");
+  background-size: 95px;
+}
+.home button.slick-prev, .home button.slick-prev:hover {
+  position: absolute;
+  top: 41%;
+  left: 15px;
+  z-index: 1;
+  width: 47px;
+  height: 75px;
+  background-image: url("http://maggiesadler.com/wp-content/uploads/2015/10/left-right-arrow.png");
+  background-size: 95px;
+  background-position-x: right;
+}
+.home .slick-prev:before, .home .slick-next:before {
+  font-size: 70px;
+  color: #EA8496;
+  line-height: inherit;
+  font-weight: bold;
+}
+.home .eventCarousal img, .home .guestCarousal img {
+  height: 324px;
 }
 
 /*# sourceMappingURL=css/main.css.map */

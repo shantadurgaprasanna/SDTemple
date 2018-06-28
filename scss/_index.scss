@@ -1,0 +1,120 @@
+.home{    
+    // Mix gallery Slick Carousal
+    .c-slide {
+      width: 70%;
+      height:auto;
+      margin:10px auto;
+      overflow: hidden;
+      position: relative;
+    }
+    .slider-nav {
+      .slick-slide {
+        display: block;
+        height: 350px;
+        text-align: center;
+        color: white;
+      }  
+      &.slick-initialized .slick-slide {
+        display: inline-block;
+      }
+    }
+    .slider-thumbs {
+      display: none;
+      &.slick-initialized {
+        display: block;
+        // text-align: center;
+        & .slick-track {
+          position:relative;
+          // text-align:center;
+        }
+        .slick-list {
+          margin: 15 -2px;
+        }
+        .slick-slide {
+          display: inline-block;
+          float:none;
+          border: 1px solid white;
+          margin: 15px 2px;
+        }
+        .slick-slide {
+          height: auto;
+          max-width: 100%;
+          outline: none;
+          // padding:10px;
+          background-color:red;
+          text-align:center;
+          //margin-right:0px;
+          //margin-left:0px;
+        }
+        .slick-current {
+          border: 1px solid blue;
+        }
+      }
+    }
+    .pre{
+      width: 25px !important;
+      position: absolute;
+      top: 0;
+      bottom: 30%;
+      left: 0;
+      z-index: 2;
+      margin: auto;
+    }
+    .next{
+      width: 25px !important;
+      position: absolute;
+      top: 0;
+      bottom: 30%;
+      right: 0;
+      z-index: 2;
+      margin: auto;
+    }
+    // Mix gallery Slick Carousal code end here
+
+    // Event and guest slick carousal
+    .eventCarousal,.guestCarousal {
+      max-width: 1000px;
+      margin: 0 auto;
+      width: 50%;
+      overflow: hidden;
+    }
+    .slick-slide {
+      margin: 0 5px;
+    }
+    .slick-list {
+      margin: 0px -5px 0px -5px;
+    }
+    button.slick-next, button.slick-next:hover {
+      position: absolute;
+      top: 41%;
+      right: 54px;
+      width: 47px;
+      height: 75px;
+      background-image: url("http://maggiesadler.com/wp-content/uploads/2015/10/left-right-arrow.png");
+      background-size: 95px;
+    }
+    button.slick-prev, button.slick-prev:hover {
+      position: absolute;
+      top: 41%;
+      left: 15px;
+      z-index: 1;
+      width: 47px;
+      height: 75px;
+      background-image: url("http://maggiesadler.com/wp-content/uploads/2015/10/left-right-arrow.png");
+      background-size: 95px;
+          background-position-x: right;
+    }
+    .slick-prev:before, .slick-next:before {
+      font-size: 70px;
+      color: #EA8496;
+      line-height: inherit;
+      font-weight: bold;
+    }
+    .eventCarousal img, .guestCarousal img {
+      height: 324px;
+    }
+    // Event and guest slick carousal
+
+}
+
+
