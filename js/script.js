@@ -99,5 +99,15 @@ $(function(){
            }
         }]
     });
+    // Event and Guest Slick carousal Code End Here
+ });
 
-});
+// $(document).ready(function(){
+// 	//Gallery Page Code Start here
+//     $('#imageGallery').lightGallery({
+//         showThumbByDefault:true,
+//         addClass:'showThumbByDefault'
+//     });
+
+//      // $("#videoGallery").lightGallery();
+// });
