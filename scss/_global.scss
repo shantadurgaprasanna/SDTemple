@@ -1,3 +1,27 @@
+
+@font-face {
+    font-family: 'Marathi-Vakra';
+    src: url('../fonts/Marathi-Vakra.eot');
+    src: url('../fonts/Marathi-Vakra.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Marathi-Vakra.woff2') format('woff2'),
+        url('../fonts/Marathi-Vakra.woff') format('woff'),
+        url('../fonts/Marathi-Vakra.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SHREE-DEV7-0708';
+    src: url('../fonts/SHREE-DEV7-0708.eot');
+    src: url('../fonts/SHREE-DEV7-0708.woff2') format('woff2'),
+        url('../fonts/SHREE-DEV7-0708.woff') format('woff'),
+        url('../fonts/SHREE-DEV7-0708.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
-	
+	background: url(../images/global/body_background1.png);
+	height: auto;
+	font-family: 'SHREE-DEV7-0708';	
+	background-size: 100% auto;
 }

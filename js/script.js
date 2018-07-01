@@ -1,6 +1,7 @@
 
 
 $(function(){
+	// $('body').addClass('left_piller right_piller');
 	$("#headerComp").load("pages/header.html"); 
   	$("#footerComp").load("pages/footer.html");
 
@@ -22,7 +23,7 @@ $(function(){
 	    asNavFor: '.slider-thumbs'
 	  });
 	  $('.slider-thumbs').slick({
-	    slidesToShow: 4,
+	    slidesToShow: 5,
 	    slidesToScroll: 1,
 	    autoplay: false,
 	    arrows: false,
@@ -37,7 +38,7 @@ $(function(){
 	    	{
 		      breakpoint: 1920,
 		      settings: {
-		        slidesToShow: 4,
+		        slidesToShow: 5,
 		        slidesToScroll: 3,
 		        infinite: true,
 		        dots: false
@@ -46,7 +47,7 @@ $(function(){
 		    {
 		      breakpoint: 1024,
 		      settings: {
-		        slidesToShow: 3,
+		        slidesToShow: 5,
 		        slidesToScroll: 3,
 		        infinite: true,
 		        dots: false

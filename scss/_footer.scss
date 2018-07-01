@@ -1,38 +1,38 @@
 #footerComp{
 	.footerSection{
-		.footSec{
+		text-align: center;
+		.row{
 			text-align: center;
-			width: 200px;
-			height: 150px;
-			background: red;
-			position: relative;
-			&:before{
-				content: "";
-			    position: absolute;
-			    top: -50px;
-			    left: 0;
-			    width: 100px;
-			    height: 0px;
-			    border-left: 100px solid transparent;
-			    border-right: 100px solid transparent;
-			    border-bottom: 50px solid red;
+			.footSec{
+				text-align: center;
+				width: 200px;
+				height: 150px;
+				// background: red;
+				position: relative;
+				background: url(../images/global/footer_frame.png);
+				width: 321px;
+			    height: 402px;
+			    background-size: 80% 80%;
+			    background-repeat: no-repeat;
+			    background-position: center;
+			    float: none;
+    			display: inline-block;
+				.temple_hours, .temple_address, .quick_links{
+					position: absolute;
+				    // font-size: 10px;
+				    text-align: center;
+				    width: 200px;
+	    			top: 110px;
+	    			left: 60px;
+	    			span{
+	    				display: block;
+	    			}		
+	    			ul{
+	    				list-style-type: none;
+	    				padding: 0;
+	    			}
+				}	
 			}
-			&:after{
-				content: "";
-			    position: absolute;
-			    bottom: -50px;
-			    left: 0;
-			    width: 0;
-			    height: 0;
-			    border-left: 100px solid transparent;
-			    border-right: 100px solid transparent;
-			    border-top: 50px solid red;
-			}
-			.temple_hours, .temple_address, .quick_links{
-				position: absolute;
-			    font-size: 10px;
-			    text-align: center;
-			}	
-		}
+		}   
 	}	
 }
