@@ -14,7 +14,6 @@
   font-style: normal;
 }
 body {
-  background: url(../images/global/body_background1.png);
   height: auto;
   font-family: "SHREE-DEV7-0708";
   background-size: 100% auto;
@@ -12491,4 +12490,9 @@ readers do not read off random characters that represent icons */
   border-radius: 5px;
 }
 
-/*# sourceMappingURL=main.css.map */
+.contactus #map {
+  width: 750px;
+  height: 500px;
+}
+
+/*# sourceMappingURL=css/main.css.map */
