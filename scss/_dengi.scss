@@ -1,0 +1,101 @@
+.dengiPage{
+	.dengiBody{
+		// margin: 100px 0px 50px;
+		.descr_text{			
+			font-size: 18px;
+			line-height: 30px;
+			text-align: center;
+	    	padding: 0 20px;
+	    	margin: 0 0 50px;
+		}
+		table{
+			position: relative;
+			margin: 0 0 100px;
+			thead{
+				tr{
+					background-color: #ad7739;	
+					th{
+						text-align: center;	
+						font-size: 18px;
+					}				
+				}			
+			}
+			tbody{
+				background: url(../images/global/dengi_table_piller.png);
+				width: 1078px;
+				height: 398px;
+				z-index: 999;
+				tr{
+					&:nth-child(even){
+						background-color: #eed6a6;	
+					}
+					&:nth-child(odd){
+						background-color: #f2e0b4;
+					}
+					td{
+						text-align: center;
+						z-index: 1;
+					}			
+				}
+				&.dengi_table_row{
+					// visibility: hidden;
+					&.active{
+						// displa: visible;
+					}
+				}
+			}
+			tfoot{
+				tr{
+					background-color: #ad7739;	
+					td{
+						text-align: center;
+						span{
+							cursor: pointer;
+							font-size: 18px;
+	    					font-weight: bold;
+	   	 					padding: 7px 16px;
+	   	 					&.active{
+	   	 						background-color: #fff;
+	   	 						border-radius: 50%;
+	   	 					// 	height: 30px;
+	    						// width: 35px;
+	    						// display: inline-block;
+	    						// padding: 3px;
+	   	 					}
+	   	 					&:hover{
+	   	 						background-color: #fff;
+	   	 						border-radius: 50%;
+	   	 					// 	height: 30px;
+	    						// width: 35px;
+	    						// display: inline-block;
+	    						// padding: 3px;
+	   	 					}
+						}
+					}				
+				}
+			}
+		}
+		p.dengi_account_text{
+			text-align: center;
+			span{
+				display: block;
+	    		font-size: 18px;
+	    		padding: 10px 0;
+			}
+		}
+		.dengi_account_header{
+			font-size: 30px;
+	    	text-align: center;
+	    	font-weight: bold;
+		}
+		hr.dengi_hr{
+		    border: 0;
+		    height: 3px;
+		    width: 60%;
+		    background-image: -webkit-linear-gradient(left, #f3bfbf, red, #f3bfbf);
+		    background-image: -moz-linear-gradient(left, #f3bfbf, red, #f3bfbf);
+		    background-image: -ms-linear-gradient(left, #f3bfbf, red, #f3bfbf);
+		    background-image: -o-linear-gradient(left, #f3bfbf, red, #f3bfbf);
+		}
+	}
+}

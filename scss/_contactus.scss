@@ -1,6 +1,68 @@
 .contactus{
-	 #map {
-   		width: 750px;
-   		height: 500px;
- 	}
+    .contactusBody{
+        text-align: center;
+        // margin: 100px 0 50px;
+        p.contantus_title{
+            font-size: 30px;
+            font-weight: bold;
+            color: red;
+            margin: 0 0 50px;
+            img{
+                width: 150px;
+                height: auto;
+                &.title_left{
+                    padding-right: 30px;
+                    margin-top: -9px;
+                }
+                &.title_right{
+                    padding-left: 30px;
+                    margin-top: -9px;
+                }
+            }
+        }
+        #map {
+            width: 750px;
+            height: 500px;
+            margin: 100px auto;
+        }
+        .address{
+            background: url(../images/global/contact_us_address.png) no-repeat;
+            // width: 1084px;
+            height: 487px;
+            background-size: 80% 60%;
+            margin: 0 auto;
+            background-position: center;
+            position: relative;
+            .address_section_1{
+                text-align: center;
+                position: absolute;
+                top: 34%;
+                left: 20%;
+                font-size: 24px;
+                line-height: 40px;
+                span{
+                    display: block;
+                    &.address_title{
+                        color: red;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .address_section_2{
+                text-align: center;
+                position: absolute;
+                top: 34%;
+                right: 18%;
+                font-size: 24px;
+                line-height: 40px;
+                span{
+                    display: block;
+                    &.address_title{
+                        color: red;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
 }

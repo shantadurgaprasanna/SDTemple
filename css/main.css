@@ -14,6 +14,7 @@
   font-style: normal;
 }
 body {
+  background: url(../images/global/body_background1.png);
   height: auto;
   font-family: "SHREE-DEV7-0708";
   background-size: 100% auto;
@@ -12212,6 +12213,9 @@ readers do not read off random characters that represent icons */
   opacity: 1;
 }
 
+#headerComp {
+  margin: 0 0 100px;
+}
 #headerComp .headerSection .header_logo {
   text-align: center;
 }
@@ -12285,6 +12289,9 @@ readers do not read off random characters that represent icons */
   background: none;
 }
 
+#footerComp {
+  margin: 100px 0 0px;
+}
 #footerComp .footerSection {
   text-align: center;
 }
@@ -12490,9 +12497,214 @@ readers do not read off random characters that represent icons */
   border-radius: 5px;
 }
 
-.contactus #map {
+.contactus .contactusBody {
+  text-align: center;
+}
+.contactus .contactusBody p.contantus_title {
+  font-size: 30px;
+  font-weight: bold;
+  color: red;
+  margin: 0 0 50px;
+}
+.contactus .contactusBody p.contantus_title img {
+  width: 150px;
+  height: auto;
+}
+.contactus .contactusBody p.contantus_title img.title_left {
+  padding-right: 30px;
+  margin-top: -9px;
+}
+.contactus .contactusBody p.contantus_title img.title_right {
+  padding-left: 30px;
+  margin-top: -9px;
+}
+.contactus .contactusBody #map {
   width: 750px;
   height: 500px;
+  margin: 100px auto;
+}
+.contactus .contactusBody .address {
+  background: url(../images/global/contact_us_address.png) no-repeat;
+  height: 487px;
+  background-size: 80% 60%;
+  margin: 0 auto;
+  background-position: center;
+  position: relative;
+}
+.contactus .contactusBody .address .address_section_1 {
+  text-align: center;
+  position: absolute;
+  top: 34%;
+  left: 20%;
+  font-size: 24px;
+  line-height: 40px;
+}
+.contactus .contactusBody .address .address_section_1 span {
+  display: block;
+}
+.contactus .contactusBody .address .address_section_1 span.address_title {
+  color: red;
+  font-weight: bold;
+}
+.contactus .contactusBody .address .address_section_2 {
+  text-align: center;
+  position: absolute;
+  top: 34%;
+  right: 18%;
+  font-size: 24px;
+  line-height: 40px;
+}
+.contactus .contactusBody .address .address_section_2 span {
+  display: block;
+}
+.contactus .contactusBody .address .address_section_2 span.address_title {
+  color: red;
+  font-weight: bold;
 }
 
-/*# sourceMappingURL=css/main.css.map */
+.aboutus .aboutusBody {
+  text-align: center;
+}
+.aboutus .aboutusBody p.aboutus_title {
+  font-size: 30px;
+  font-weight: bold;
+  color: red;
+  margin: 0 0 50px;
+}
+.aboutus .aboutusBody p.aboutus_title img {
+  width: 150px;
+  height: auto;
+}
+.aboutus .aboutusBody p.aboutus_title img.title_left {
+  padding-right: 30px;
+  margin-top: -9px;
+}
+.aboutus .aboutusBody p.aboutus_title img.title_right {
+  padding-left: 30px;
+  margin-top: -9px;
+}
+.aboutus .aboutusBody .descr_text {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  padding: 0 20px;
+  margin: 0 0 50px;
+}
+.aboutus .aboutusBody .commitee_members ul.commitee_members_list {
+  list-style: none;
+}
+.aboutus .aboutusBody .commitee_members ul.commitee_members_list li {
+  padding: 20px 0;
+}
+.aboutus .aboutusBody .commitee_members ul.commitee_members_list li span {
+  display: block;
+}
+.aboutus .aboutusBody .commitee_members ul.commitee_members_list li span img {
+  width: 250px;
+  height: 250px;
+}
+.aboutus .aboutusBody .commitee_members ul.commitee_members_list li span.member_name {
+  padding: 10px 0 3px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.aboutus .aboutusBody .commitee_members ul.commitee_members_list li span.member_post {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.dengiPage .dengiBody .descr_text {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  padding: 0 20px;
+  margin: 0 0 50px;
+}
+.dengiPage .dengiBody table {
+  position: relative;
+  margin: 0 0 100px;
+}
+.dengiPage .dengiBody table thead tr {
+  background-color: #ad7739;
+}
+.dengiPage .dengiBody table thead tr th {
+  text-align: center;
+  font-size: 18px;
+}
+.dengiPage .dengiBody table tbody {
+  background: url(../images/global/dengi_table_piller.png);
+  width: 1078px;
+  height: 398px;
+  z-index: 999;
+}
+.dengiPage .dengiBody table tbody tr:nth-child(even) {
+  background-color: #eed6a6;
+}
+.dengiPage .dengiBody table tbody tr:nth-child(odd) {
+  background-color: #f2e0b4;
+}
+.dengiPage .dengiBody table tbody tr td {
+  text-align: center;
+  z-index: 1;
+}
+.dengiPage .dengiBody table tfoot tr {
+  background-color: #ad7739;
+}
+.dengiPage .dengiBody table tfoot tr td {
+  text-align: center;
+}
+.dengiPage .dengiBody table tfoot tr td span {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 7px 16px;
+}
+.dengiPage .dengiBody table tfoot tr td span.active {
+  background-color: #fff;
+  border-radius: 50%;
+}
+.dengiPage .dengiBody table tfoot tr td span:hover {
+  background-color: #fff;
+  border-radius: 50%;
+}
+.dengiPage .dengiBody p.dengi_account_text {
+  text-align: center;
+}
+.dengiPage .dengiBody p.dengi_account_text span {
+  display: block;
+  font-size: 18px;
+  padding: 10px 0;
+}
+.dengiPage .dengiBody .dengi_account_header {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+.dengiPage .dengiBody hr.dengi_hr {
+  border: 0;
+  height: 3px;
+  width: 60%;
+  background-image: -webkit-linear-gradient(left, #f3bfbf, red, #f3bfbf);
+  background-image: -moz-linear-gradient(left, #f3bfbf, red, #f3bfbf);
+  background-image: -ms-linear-gradient(left, #f3bfbf, red, #f3bfbf);
+  background-image: -o-linear-gradient(left, #f3bfbf, red, #f3bfbf);
+}
+
+.galleryPage #photos #photo-gallery {
+  list-style: none;
+  margin: 0px auto;
+  padding: 10px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+}
+.galleryPage #photos img {
+  max-width: 32.2%;
+  float: left;
+  display: block;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=main.css.map */

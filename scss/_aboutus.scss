@@ -1,0 +1,55 @@
+.aboutus{
+    .aboutusBody{
+        text-align: center;
+        // margin: 100px 0 0px;
+        p.aboutus_title{
+            font-size: 30px;
+            font-weight: bold;
+            color: red;
+            margin: 0 0 50px;
+            img{
+                width: 150px;
+                height: auto;
+                &.title_left{
+                    padding-right: 30px;
+                    margin-top: -9px;
+                }
+                &.title_right{
+                    padding-left: 30px;
+                    margin-top: -9px;
+                }
+            }
+        }
+        .descr_text{            
+            font-size: 18px;
+            line-height: 30px;
+            text-align: center;
+            padding: 0 20px;
+            margin: 0 0 50px;
+        }
+        .commitee_members{
+            ul.commitee_members_list{
+                list-style: none;
+                li{
+                    padding: 20px 0;
+                    span{
+                        display: block;
+                        img{
+                            width: 250px;
+                            height: 250px;
+                        }
+                        &.member_name {
+                            padding: 10px 0 3px;
+                            font-size: 18px;
+                            font-weight: bold;
+                        }
+                        &.member_post {
+                            font-size: 16px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
