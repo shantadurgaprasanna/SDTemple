@@ -12612,6 +12612,31 @@ readers do not read off random characters that represent icons */
   font-size: 16px;
   font-weight: bold;
 }
+.aboutus .aboutusBody #profile-grid {
+  overflow: auto;
+  white-space: normal;
+}
+.aboutus .aboutusBody #profile-grid .profile {
+  padding-bottom: 40px;
+}
+.aboutus .aboutusBody #profile-grid .panel {
+  padding: 0;
+}
+.aboutus .aboutusBody #profile-grid .panel-body {
+  padding: 15px;
+}
+.aboutus .aboutusBody #profile-grid .profile-name {
+  font-weight: bold;
+}
+.aboutus .aboutusBody #profile-grid .thumbnail {
+  margin-bottom: 6px;
+}
+.aboutus .aboutusBody #profile-grid .panel-thumbnail {
+  overflow: hidden;
+}
+.aboutus .aboutusBody #profile-grid .img-rounded {
+  border-radius: 4px 4px 0 0;
+}
 
 .dengiPage .dengiBody .descr_text {
   font-size: 18px;
@@ -12707,4 +12732,4 @@ readers do not read off random characters that represent icons */
   border-radius: 5px;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=css/main.css.map */
