@@ -149,6 +149,23 @@ $(function(){
         });
     }
 
+
+     if(pageName=='gallery.html'){
+    // alert('hi');
+        // $(document).ready( function(){
+ 
+        // $.getJSON('data_image.json', function(data) {
+        //       $.each(data.items, function(i,f) {
+        //           $("ul").append("<li><img src="+f.url+" id='image'/><br/><span>Caption: "+f.caption+"</span></li>");
+        //       });
+        // });
+        var monkeyList = new List('test-list', {
+          valueNames: ['name'],
+          page: 3,
+          pagination: true
+        });
+    }
+
  });
 
 // $(document).ready(function(){
@@ -382,3 +399,5 @@ function init() {
  }
 
  // Map code goes here
+
+

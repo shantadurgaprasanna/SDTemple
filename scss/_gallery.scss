@@ -10,11 +10,14 @@
 	  		text-align: center;
 		}
 		img {
-		  	max-width: 32.2%;
+		  	max-width: none;
 		  	float: left;
 		  	display: block;
-		  	margin: 5px;
+		  	padding: 5px;
+		  	margin: 0;
 		  	border-radius: 5px;
+		  	height: 200px;
+    		width: 200px;
 		}
 	}
 }

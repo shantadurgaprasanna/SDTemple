@@ -12479,23 +12479,6 @@ readers do not read off random characters that represent icons */
   height: 324px;
 }
 
-.galleryPage #photos #photo-gallery {
-  list-style: none;
-  margin: 0px auto;
-  padding: 10px;
-  display: block;
-  max-width: 100%;
-  height: auto;
-  text-align: center;
-}
-.galleryPage #photos img {
-  max-width: 32.2%;
-  float: left;
-  display: block;
-  margin: 5px;
-  border-radius: 5px;
-}
-
 .contactus .contactusBody {
   text-align: center;
 }
@@ -12778,6 +12761,26 @@ readers do not read off random characters that represent icons */
   display: block;
   margin: 5px;
   border-radius: 5px;
+}
+
+.galleryPage #photos #photo-gallery {
+  list-style: none;
+  margin: 0px auto;
+  padding: 10px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+}
+.galleryPage #photos img {
+  max-width: none;
+  float: left;
+  display: block;
+  padding: 5px;
+  margin: 0;
+  border-radius: 5px;
+  height: 200px;
+  width: 200px;
 }
 
 /*# sourceMappingURL=css/main.css.map */
