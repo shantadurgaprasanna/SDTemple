@@ -14,7 +14,6 @@
   font-style: normal;
 }
 body {
-  background: url(../images/global/body_background1.png);
   height: auto;
   font-family: "SHREE-DEV7-0708";
   background-size: 100% auto;
@@ -12619,6 +12618,13 @@ readers do not read off random characters that represent icons */
 .aboutus .aboutusBody #profile-grid .profile {
   padding-bottom: 40px;
 }
+.aboutus .aboutusBody #profile-grid .profile .panel-default {
+  border: none;
+}
+.aboutus .aboutusBody #profile-grid .profile .panel {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
 .aboutus .aboutusBody #profile-grid .panel {
   padding: 0;
 }
@@ -12637,6 +12643,19 @@ readers do not read off random characters that represent icons */
 .aboutus .aboutusBody #profile-grid .img-rounded {
   border-radius: 4px 4px 0 0;
 }
+.aboutus .aboutusBody #profile-grid .img-thumb {
+  width: 200px;
+  height: 200px;
+}
+.aboutus .aboutusBody #profile-grid .thumb .profile_desc, .aboutus .aboutusBody #profile-grid .thumb .profile_title {
+  display: none;
+}
+.aboutus .aboutusBody #profile-grid .modal-profile.in .modal-dialog.modal-lg {
+  width: 700px;
+}
+.aboutus .aboutusBody #profile-grid .modal-profile.in .modal-dialog.modal-lg .modal-body img {
+  width: 360px;
+}
 
 .dengiPage .dengiBody .descr_text {
   font-size: 18px;
@@ -12648,6 +12667,31 @@ readers do not read off random characters that represent icons */
 .dengiPage .dengiBody table {
   position: relative;
   margin: 0 0 100px;
+  width: calc(100% - 312px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.dengiPage .dengiBody table::before {
+  content: "";
+  position: absolute;
+  width: 156px;
+  height: calc(100%);
+  top: 0px;
+  left: -156px;
+  z-index: 1;
+  background: #ad7739 url(../images/global/dengi_table_left_piller.png) no-repeat center;
+  background-size: 100% calc(100% - 82px);
+}
+.dengiPage .dengiBody table::after {
+  content: "";
+  position: absolute;
+  width: 156px;
+  height: calc(100%);
+  top: 0px;
+  right: -156px;
+  z-index: 1;
+  background: #ad7739 url(../images/global/dengi_table_right_piller.png) no-repeat center;
+  background-size: 100% calc(100% - 82px);
 }
 .dengiPage .dengiBody table thead tr {
   background-color: #ad7739;
@@ -12662,6 +12706,9 @@ readers do not read off random characters that represent icons */
   height: 398px;
   z-index: 999;
 }
+.dengiPage .dengiBody table tbody tr {
+  border: none;
+}
 .dengiPage .dengiBody table tbody tr:nth-child(even) {
   background-color: #eed6a6;
 }
@@ -12671,6 +12718,7 @@ readers do not read off random characters that represent icons */
 .dengiPage .dengiBody table tbody tr td {
   text-align: center;
   z-index: 1;
+  border: none;
 }
 .dengiPage .dengiBody table tfoot tr {
   background-color: #ad7739;

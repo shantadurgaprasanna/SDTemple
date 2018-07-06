@@ -52,15 +52,57 @@
             }
         }
     //Modal Code here
-    #profile-grid { overflow: auto; white-space: normal; }
-    #profile-grid .profile { padding-bottom: 40px; }
-    #profile-grid .panel { padding: 0 }
-    #profile-grid .panel-body { padding: 15px }
-    #profile-grid .profile-name { font-weight: bold; }
-    #profile-grid .thumbnail {margin-bottom:6px;}
-    #profile-grid .panel-thumbnail { overflow: hidden; }
-    #profile-grid .img-rounded { border-radius: 4px 4px 0 0;}
-
-
+        #profile-grid { 
+            overflow: auto; 
+            white-space: normal; 
+            .profile { 
+                padding-bottom: 40px; 
+                .panel-default { 
+                    border: none; 
+                }
+                .panel{ 
+                    box-shadow: none; 
+                    -webkit-box-shadow: none;
+                }
+            }
+            .panel { 
+                padding: 0;
+            }
+            .panel-body { 
+                padding: 15px; 
+            }
+            .profile-name { 
+                font-weight: bold; 
+            }
+            .thumbnail {
+                margin-bottom:6px;
+            }
+            .panel-thumbnail { 
+                overflow: hidden; 
+            }
+            .img-rounded { 
+                border-radius: 4px 4px 0 0;
+            }
+            .img-thumb { 
+                width: 200px; 
+                height: 200px;
+            }
+            .thumb {
+                .profile_desc, .profile_title{ 
+                    display: none;
+                }
+            }
+            .modal-profile.in{
+                .modal-dialog.modal-lg{
+                    width: 700px;
+                    .modal-body{
+                        img{
+                            width: 360px;
+                        }
+                    }
+                }
+            }
+        }
+    //Modal Code End here
     }
 }

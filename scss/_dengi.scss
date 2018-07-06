@@ -11,6 +11,31 @@
 		table{
 			position: relative;
 			margin: 0 0 100px;
+			width: calc(100% - 312px);
+		    left: 50%;
+		    transform: translateX(-50%);
+			&::before{
+				content: '';
+			    position: absolute;
+			    width: 156px;
+			    height: calc(100%);
+			    top: 0px;
+			    left: -156px;
+			    z-index: 1;
+			    background: #ad7739 url(../images/global/dengi_table_left_piller.png) no-repeat center;
+    			background-size: 100% calc(100% - 82px);
+			}
+			&::after{
+				content: '';
+			    position: absolute;
+			    width: 156px;
+			    height: calc(100%);
+			    top: 0px;
+			    right: -156px;
+			    z-index: 1;
+			    background: #ad7739 url(../images/global/dengi_table_right_piller.png) no-repeat center;
+    			background-size: 100% calc(100% - 82px);
+			}
 			thead{
 				tr{
 					background-color: #ad7739;	
@@ -26,6 +51,7 @@
 				height: 398px;
 				z-index: 999;
 				tr{
+					border: none;
 					&:nth-child(even){
 						background-color: #eed6a6;	
 					}
@@ -35,6 +61,7 @@
 					td{
 						text-align: center;
 						z-index: 1;
+						border: none;
 					}			
 				}
 				&.dengi_table_row{

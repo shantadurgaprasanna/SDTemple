@@ -138,10 +138,14 @@ $(function(){
             event.preventDefault();
             var content = $('.modal-body');
             content.empty();
-            var title = $(this).attr("title");
-            $('.modal-title').html(title);          
+            // var title = $(this).attr("title");
+            var profile_desc = $(this).find('.profile_desc_div').val();
+            console.log(profile_desc);
+            // $('.modal-title').html(title);          
             content.html($(this).html());
             $(".modal-profile").modal({show:true});
+            $(".modal-profile .modal-body img").addClass('col-md-6');
+            $(".modal-profile .modal-body .profile_desc_div").addClass('col-md-6');
         });
     }
 
