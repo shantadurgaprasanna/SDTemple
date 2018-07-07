@@ -42,14 +42,16 @@
 					th{
 						text-align: center;	
 						font-size: 18px;
+						border: none;
 					}				
 				}			
 			}
 			tbody{
-				background: url(../images/global/dengi_table_piller.png);
+				// background: url(../images/global/dengi_table_piller.png);
 				width: 1078px;
 				height: 398px;
 				z-index: 999;
+				border: none;
 				tr{
 					border: none;
 					&:nth-child(even){
@@ -76,11 +78,16 @@
 					background-color: #ad7739;	
 					td{
 						text-align: center;
+						border: none;
 						span{
 							cursor: pointer;
 							font-size: 18px;
 	    					font-weight: bold;
 	   	 					padding: 7px 16px;
+	   	 					&:nth-child(1), &:nth-child(12){
+	   	 						font-family: arial;
+	   	 						vertical-align: middle;
+	   	 					}
 	   	 					&.active{
 	   	 						background-color: #fff;
 	   	 						border-radius: 50%;

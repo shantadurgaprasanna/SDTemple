@@ -14,9 +14,35 @@
   font-style: normal;
 }
 body {
+  background: url(../images/global/body_background.png);
   height: auto;
   font-family: "SHREE-DEV7-0708";
   background-size: 100% auto;
+  padding: 0 15px;
+}
+
+body::before {
+  content: "";
+  background: url(../images/global/left_piller.png) no-repeat;
+  width: 348px;
+  height: 5500px;
+  z-index: 1;
+  left: 0;
+  background-size: calc(100%) calc(100%);
+  top: 0;
+  position: absolute;
+}
+
+body::after {
+  content: "";
+  background: url(../images/global/right_piller.png) no-repeat;
+  width: 348px;
+  height: 5500px;
+  z-index: 1;
+  right: 0;
+  background-size: calc(100%) calc(100%);
+  top: 0;
+  position: absolute;
 }
 
 /*!
@@ -12610,6 +12636,7 @@ readers do not read off random characters that represent icons */
 }
 .aboutus .aboutusBody #profile-grid .panel {
   padding: 0;
+  background-color: transparent;
 }
 .aboutus .aboutusBody #profile-grid .panel-body {
   padding: 15px;
@@ -12633,13 +12660,48 @@ readers do not read off random characters that represent icons */
 .aboutus .aboutusBody #profile-grid .thumb .profile_desc, .aboutus .aboutusBody #profile-grid .thumb .profile_title {
   display: none;
 }
-.aboutus .aboutusBody #profile-grid .modal-profile.in .modal-dialog.modal-lg {
+.aboutus .aboutusBody #profile-grid .close {
+  display: none;
+}
+.aboutus .aboutusBody .modal-profile.in .modal-dialog.modal-lg {
   width: 700px;
 }
-.aboutus .aboutusBody #profile-grid .modal-profile.in .modal-dialog.modal-lg .modal-body img {
-  width: 360px;
+.aboutus .aboutusBody .modal-profile.in .modal-dialog.modal-lg .modal-content {
+  background-color: transparent;
+  background: url(../images/global/body_background.png);
+  background-size: 100% 100%;
+  border-radius: 0;
 }
-
+.aboutus .aboutusBody .modal-profile.in .modal-dialog.modal-lg .modal-content .modal-header, .aboutus .aboutusBody .modal-profile.in .modal-dialog.modal-lg .modal-content .modal-footer {
+  border: none;
+  display: none;
+}
+.aboutus .aboutusBody .modal-profile.in .modal-dialog.modal-lg .modal-content .modal-body .profile_desc_div {
+  text-align: left;
+}
+.aboutus .aboutusBody .modal-profile.in .modal-dialog.modal-lg .modal-content .modal-body .profile_desc_div button {
+  font-family: arial;
+  right: 0px;
+  position: absolute;
+  top: -15px;
+  padding: 5px 8px;
+  background: #de4943;
+  opacity: 1;
+  color: #fff;
+  text-shadow: none;
+}
+.aboutus .aboutusBody .modal-profile.in .modal-dialog.modal-lg .modal-content .modal-body .profile_desc_div h3.profile_title {
+  font-weight: bold;
+  color: #de4943;
+}
+.aboutus .aboutusBody .modal-profile.in .modal-dialog.modal-lg .modal-content .modal-body .profile_desc_div h3.profile_title span {
+  display: block;
+  font-size: 18px;
+  line-height: 36px;
+}
+.aboutus .aboutusBody .modal-profile.in .modal-dialog.modal-lg .modal-content .modal-body .profile_desc_div p.profile_desc {
+  line-height: 24px;
+}
 .dengiPage .dengiBody .descr_text {
   font-size: 18px;
   line-height: 30px;
@@ -12682,12 +12744,13 @@ readers do not read off random characters that represent icons */
 .dengiPage .dengiBody table thead tr th {
   text-align: center;
   font-size: 18px;
+  border: none;
 }
 .dengiPage .dengiBody table tbody {
-  background: url(../images/global/dengi_table_piller.png);
   width: 1078px;
   height: 398px;
   z-index: 999;
+  border: none;
 }
 .dengiPage .dengiBody table tbody tr {
   border: none;
@@ -12708,12 +12771,17 @@ readers do not read off random characters that represent icons */
 }
 .dengiPage .dengiBody table tfoot tr td {
   text-align: center;
+  border: none;
 }
 .dengiPage .dengiBody table tfoot tr td span {
   cursor: pointer;
   font-size: 18px;
   font-weight: bold;
   padding: 7px 16px;
+}
+.dengiPage .dengiBody table tfoot tr td span:nth-child(1), .dengiPage .dengiBody table tfoot tr td span:nth-child(12) {
+  font-family: arial;
+  vertical-align: middle;
 }
 .dengiPage .dengiBody table tfoot tr td span.active {
   background-color: #fff;
@@ -12783,4 +12851,89 @@ readers do not read off random characters that represent icons */
   width: 200px;
 }
 
-/*# sourceMappingURL=css/main.css.map */
+.history .historyBody .header_div {
+  position: relative;
+  margin-bottom: 10%;
+}
+.history .historyBody .header_div .history_image_bottom_left {
+  background: url(../images/homepage/header_carousal/home_carousal_bottom_left.png) no-repeat;
+  position: absolute;
+  bottom: -60px;
+  left: 25px;
+  height: 134px;
+  width: 134px;
+}
+.history .historyBody .header_div .history_image_bottom_right {
+  background: url(../images/homepage/header_carousal/home_carousal_bottom_right.png) no-repeat;
+  position: absolute;
+  bottom: -60px;
+  right: 25px;
+  height: 134px;
+  width: 134px;
+}
+.history .historyBody .header_div .history_image_top_left {
+  background: url(../images/homepage/header_carousal/home_carousal_top_left.png) no-repeat;
+  position: absolute;
+  top: -60px;
+  left: 25px;
+  height: 134px;
+  width: 134px;
+}
+.history .historyBody .header_div .history_image_top_right {
+  background: url(../images/homepage/header_carousal/home_carousal_top_right.png) no-repeat;
+  position: absolute;
+  top: -60px;
+  right: 25px;
+  height: 134px;
+  width: 134px;
+}
+.history .historyBody .header_div .header_image {
+  text-align: center;
+}
+.history .historyBody .header_div .header_image img.header_img {
+  width: 86%;
+  height: auto;
+}
+.history .historyBody .history_div h1 {
+  text-align: center;
+  margin: 0px 0 50px;
+}
+.history .historyBody .history_div h1 span {
+  display: block;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+  color: #f10a05;
+}
+.history .historyBody .history_div .history_text {
+  height: 810px;
+  overflow: auto;
+  position: relative;
+}
+.history .historyBody .history_div .history_text::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+.history .historyBody .history_div .history_text::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.history .historyBody .history_div .history_text p {
+  font-size: 18px;
+  line-height: 30px;
+}
+.history .historyBody .history_div .history_text p:nth-child(1) {
+  text-indent: 10%;
+}
+.history .historyBody .history_div .history_text h3 {
+  font-size: 24px;
+  color: #f10a05;
+  font-weight: bold;
+  padding: 15px 0;
+}
+.history .historyBody .history_div .history_text h2 {
+  color: #f10a05;
+  font-weight: bold;
+  padding: 15px 0;
+}
+
+/*# sourceMappingURL=main.css.map */

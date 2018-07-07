@@ -1,0 +1,91 @@
+.history{
+	.historyBody{
+		.header_div{
+			position: relative;
+			margin-bottom: 10%;
+			.history_image_bottom_left{
+                background: url(../images/homepage/header_carousal/home_carousal_bottom_left.png) no-repeat;  
+                position: absolute; 
+                bottom: -60px; 
+                left: 25px;
+                height: 134px;
+                width: 134px;
+            }
+            .history_image_bottom_right{
+                background: url(../images/homepage/header_carousal/home_carousal_bottom_right.png) no-repeat;  
+                position: absolute; 
+                bottom: -60px; 
+                right: 25px;
+                height: 134px;
+                width: 134px;
+            }
+            .history_image_top_left{
+                background: url(../images/homepage/header_carousal/home_carousal_top_left.png) no-repeat;  
+                position: absolute; 
+                top: -60px;
+                left: 25px;
+                height: 134px;
+                width: 134px;
+            }
+            .history_image_top_right{
+                background: url(../images/homepage/header_carousal/home_carousal_top_right.png) no-repeat;  
+                position: absolute; 
+                top: -60px; 
+                right: 25px;
+                height: 134px;
+                width: 134px;
+            }
+			.header_image{
+				text-align: center;
+				img.header_img{
+					width: 86%;
+    				height: auto;
+				}
+			}	
+		}
+		.history_div{
+			h1{
+				text-align: center;
+				margin: 0px 0 50px;
+				span{
+					display: block;
+					font-size: 24px;
+					line-height: 36px;
+					font-weight: bold;
+					color: #f10a05;
+				}
+			}
+			.history_text{
+				height: 810px;
+				overflow: auto;
+				position: relative;
+
+				&::-webkit-scrollbar {
+					width: 0px;
+					height: 0px;
+				}
+				&::-webkit-scrollbar-track {
+    				-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+				}
+				p{
+					font-size: 18px;
+    				line-height: 30px;
+    				&:nth-child(1){
+    					text-indent: 10%;
+    				}
+				}
+				h3{
+					font-size: 24px;
+				    color: #f10a05;
+				    font-weight: bold;
+				    padding: 15px 0;
+				}
+				h2{
+					color: #f10a05;
+				    font-weight: bold;
+				    padding: 15px 0;
+				}
+			}
+		}
+	}
+}

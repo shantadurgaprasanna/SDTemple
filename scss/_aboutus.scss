@@ -67,6 +67,7 @@
             }
             .panel { 
                 padding: 0;
+                background-color: transparent;
             }
             .panel-body { 
                 padding: 15px; 
@@ -92,17 +93,57 @@
                     display: none;
                 }
             }
-            .modal-profile.in{
-                .modal-dialog.modal-lg{
-                    width: 700px;
+            .close{
+                display: none;
+            }
+        }
+        .modal-profile.in{
+            .modal-dialog.modal-lg{
+                width: 700px;
+                .modal-content{
+                    background-color: transparent;
+                    background: url(../images/global/body_background.png);
+                    background-size: 100% 100%;
+                    border-radius: 0;
+                    .modal-header, .modal-footer{
+                        border: none;
+                        display: none;
+                    }
                     .modal-body{
-                        img{
-                            width: 360px;
+                        .profile_desc_div{
+                            text-align: left;
+                            button{
+                                font-family: arial;
+                                right: 0px;
+                                position: absolute;
+                                top: -15px;
+                                padding: 5px 8px;
+                                background: #de4943;
+                                opacity: 1;
+                                color: #fff;
+                                text-shadow: none;
+                            }
+                            h3.profile_title{
+                                font-weight: bold;
+                                color: #de4943;
+                                span{
+                                    display: block;
+                                    font-size: 18px;
+                                    line-height: 36px;
+                                }
+                            }
+                            p.profile_desc{
+                                line-height: 24px;
+                            }
+                            img{
+                            // width: 360px;
+                            }
                         }
                     }
                 }
             }
         }
+        
     //Modal Code End here
     }
 }

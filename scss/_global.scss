@@ -18,10 +18,32 @@
     font-weight: normal;
     font-style: normal;
 }
-
 body{
-	// background: url(../images/global/body_background1.png);
+	background: url(../images/global/body_background.png);
 	height: auto;
 	font-family: 'SHREE-DEV7-0708';	
 	background-size: 100% auto;
+    padding: 0 15px;
+}
+body::before{
+    content: "";
+    background: url(../images/global/left_piller.png) no-repeat;
+    width: 348px;
+    height: 5500px;
+    z-index: 1;
+    left: 0;
+    background-size: calc(100%) calc(100%);
+    top: 0;
+    position: absolute;
+}
+body::after{
+    content: "";
+    background: url(../images/global/right_piller.png) no-repeat;
+    width: 348px;
+    height: 5500px;
+    z-index: 1;
+    right: 0;
+    background-size: calc(100%) calc(100%);
+    top: 0;
+    position: absolute;
 }
