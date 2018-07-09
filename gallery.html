@@ -18,6 +18,14 @@
 		<!-- Reference Link:https://www.jqueryscript.net/lightbox/Gallery-Lightbox-jQuery-Slick-Lightbox.html -->
 		<!-- Contact us body goes here -->
 		<div class='galleryBody'>
+
+			<div class='gallery_div'>
+				<div id='images_gallery' class='images_gallery'>
+					<ul id='lightgallery'></ul>
+				</div>
+				<div class='video_gallery'></div>
+
+			</div>
 			<!-- Image Gallery Code Here-->
 			<!-- <div id="photos"> -->
 			    <!-- <ul id="photo-gallery"> -->
@@ -74,26 +82,27 @@
 			  <!-- </div> -->
 <!-- http://jsfiddle.net/gmoulin/dAeyV/15/ -->
 
-			  <div id="test-list">
+			 <!--  <div id="gallery_div">
+			  <div id="flipGallery"></div> -->
 				    <!-- <input type="text" class="search" /> -->
-				    <ul class="list">
-				      <li><p class="name">Guybrush Threepwood</p></li>
-				      <li><p class="name">Elaine Marley</p></li>
-				      <li><p class="name">LeChuck</p></li>
-				      <li><p class="name">Stan</p></li>
-				      <li><p class="name">Voodoo Lady</p></li>
-				      <li><p class="name">Herman Toothrot</p></li>
-				      <li><p class="name">Meathook</p></li>
-				      <li><p class="name">Carla</p></li>
-				      <li><p class="name">Otis</p></li>
-				      <li><p class="name">Rapp Scallion</p></li>
-				      <li><p class="name">Rum Rogers Sr.</p></li>
-				      <li><p class="name">Men of Low Moral Fiber</p></li>
-				      <li><p class="name">Murray</p></li>
-				      <li><p class="name">Cannibals</p></li>
+				   <!--  <ul class="list">
+				      <li><img src="https://65.media.tumblr.com/76f65bd234c1acb623cb21c274a3f55b/tumblr_ntefqnWkr31ueponpo1_500.png"></li>
+				      <li><img src="https://65.media.tumblr.com/76f65bd234c1acb623cb21c274a3f55b/tumblr_ntefqnWkr31ueponpo1_500.png"></li>
+				      <li><img src="https://65.media.tumblr.com/76f65bd234c1acb623cb21c274a3f55b/tumblr_ntefqnWkr31ueponpo1_500.png"></li>
+				      <li><img src="https://65.media.tumblr.com/76f65bd234c1acb623cb21c274a3f55b/tumblr_ntefqnWkr31ueponpo1_500.png"></li>
+				      <li><img src="https://65.media.tumblr.com/76f65bd234c1acb623cb21c274a3f55b/tumblr_ntefqnWkr31ueponpo1_500.png"></li>
+				      <li><img src="https://65.media.tumblr.com/76f65bd234c1acb623cb21c274a3f55b/tumblr_ntefqnWkr31ueponpo1_500.png"></li>
+				      <li><img src="https://65.media.tumblr.com/76f65bd234c1acb623cb21c274a3f55b/tumblr_ntefqnWkr31ueponpo1_500.png"></li>
+				      <li><img src="https://65.media.tumblr.com/76f65bd234c1acb623cb21c274a3f55b/tumblr_ntefqnWkr31ueponpo1_500.png"></li>
+				      <li><img src="https://65.media.tumblr.com/76f65bd234c1acb623cb21c274a3f55b/tumblr_ntefqnWkr31ueponpo1_500.png"></li>
+				      <li><img src="https://65.media.tumblr.com/76f65bd234c1acb623cb21c274a3f55b/tumblr_ntefqnWkr31ueponpo1_500.png"></li>
+				      <li><img src="https://65.media.tumblr.com/76f65bd234c1acb623cb21c274a3f55b/tumblr_ntefqnWkr31ueponpo1_500.png"></li>
+				      <li><img src="https://65.media.tumblr.com/76f65bd234c1acb623cb21c274a3f55b/tumblr_ntefqnWkr31ueponpo1_500.png"></li>
+				      <li><img src="https://65.media.tumblr.com/76f65bd234c1acb623cb21c274a3f55b/tumblr_ntefqnWkr31ueponpo1_500.png"></li>
+				      <li><img src="https://65.media.tumblr.com/76f65bd234c1acb623cb21c274a3f55b/tumblr_ntefqnWkr31ueponpo1_500.png"></li>
 				    </ul>
-				    <ul class="pagination"></ul>
-			  </div>
+				    <ul class="pagination"></ul> -->
+			  <!-- </div> -->
 			<!-- Image Gallery Code End Here-->
 
 			<!-- Video Gallery Code Here-->
@@ -162,10 +171,14 @@
 </body>
 <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
-<!-- <script src="js/jquery.mousewheel.min.js" type="text/javascript"></script> -->
+<script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
+<script src="js/lightgallery-all.min.js" type="text/javascript"></script>
+<script src="js/jquery.mousewheel.min.js" type="text/javascript"></script>
 <!-- <script src="js/slick.js" type="text/javascript"></script> -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
-<script src="js/lightbox.js" type="text/javascript"></script>
-
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script> -->
+<!-- <script src="js/lightgallery.js" type="text/javascript"></script> -->
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+<!-- <script type="text/javascript" src="js/settings.demo.js"></script> -->
+<!-- <script type="text/javascript" src="js/flipgallery.min.js"></script> -->
 <script src="js/script.js" type="text/javascript"></script>
 </html>

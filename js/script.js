@@ -10,11 +10,11 @@ $(function(){
     // alert(pageName);
 
 
-    if(pageName=='index.html'){
+    if(pageName=='index.html' || pageName==''){
          // alert('1');
-        // Mix gallery Slick carousal
-        $('.slider-thumbs .slick-slide').removeClass('slick-current');
-          $('.slider-nav').slick({
+        //Mix gallery Slick carousal
+        $('.mix_gallery .slider-thumbs .slick-slide').removeClass('slick-current');
+          $('.mix_gallery .slider-nav').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: true,
@@ -28,7 +28,7 @@ $(function(){
             speed: 800,
             asNavFor: '.slider-thumbs'
           });
-          $('.slider-thumbs').slick({
+          $('.mix_gallery .slider-thumbs').slick({
             slidesToShow: 5,
             slidesToScroll: 1,
             autoplay: false,
@@ -151,19 +151,63 @@ $(function(){
 
 
      if(pageName=='gallery.html'){
-    // alert('hi');
         // $(document).ready( function(){
  
         // $.getJSON('data_image.json', function(data) {
-        //       $.each(data.items, function(i,f) {
-        //           $("ul").append("<li><img src="+f.url+" id='image'/><br/><span>Caption: "+f.caption+"</span></li>");
-        //       });
+            // console.log('1');
+            // console.log(data_image.json);
+            // for (var i in data.images) {
+            //         var output+=data.gallery_page[i].src; // Place image in variable output
+            //         document.getElementById(".images_gallery ul li").innerHTML=output;
+            // }
+              // $.each(data.images, function(i,f) {
+              //     $("ul").append("<li><img src="+f.url+" id='image'/><br/><span>Caption: "+f.caption+"</span></li>");
+              // });
         // });
-        var monkeyList = new List('test-list', {
-          valueNames: ['name'],
-          page: 3,
-          pagination: true
-        });
+        // var monkeyList = new List('test-list', {
+        //   valueNames: ['name'],
+        //   page: 3,
+        //   pagination: true
+        // });
+
+        //get the images d into the li
+        // alert('1');
+        $(document).ready( function(){
+          $("#lightgallery").lightGallery(); 
+        $.getJSON('../data_image.json', function(data) { // Get data from JSON file
+            // alert('2');
+             // try{
+             //  var json = $.parseJSON(data);
+             //  for (var i =0; i< json.gallery_page_1.length; i++) {
+             //    var output+=json.gallery_page_1[i].src; // Place image in variable output
+             // }
+             //  document.getElementById(".images_gallery ul li").innerHTML=output;
+             // }catch{}
+             // var b=data.images.length;
+             // console.log(b);
+            //  for(var i=0;i<images.length; i++){
+            //     images.gallery_page_(i).forEach( function(obj) {
+            //      $(".images_gallery ul").append("<li><img src='" + f.src + 
+            //                    "' / > Caption: " + 
+            //                    f.alt 
+            //                    + " </li>");
+            // });   
+            //  }
+             
+            // for(i=0;i<data.images.length;i++){
+            //     var a=data.images.length;
+
+            // }
+            // $('.images_gallery ul li a img').colorbox();
+            $.each(data.images, function (i, f) {
+                $(".images_gallery ul").append("<li class='col-md-4' data-src='" + f.src + "'><a href=''><img src='" + f.src + 
+                               "' alt ='" + f.alt + 
+                               "' / ></a></li>");
+            });
+             console.log(this);
+            }); 
+    });
+        
     }
 
  });

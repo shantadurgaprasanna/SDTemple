@@ -23,27 +23,52 @@ body{
 	height: auto;
 	font-family: 'SHREE-DEV7-0708';	
 	background-size: 100% auto;
-    padding: 0 15px;
+    padding: 15px;
+    position: relative;
 }
 body::before{
     content: "";
-    background: url(../images/global/left_piller.png) no-repeat;
-    width: 348px;
-    height: 5500px;
+    width: 349px;
+    height: calc(100%);
     z-index: 1;
     left: 0;
-    background-size: calc(100%) calc(100%);
+    // background-size: calc(100%) calc(100%);
+    // background-size: auto calc(100%);
     top: 0;
     position: absolute;
 }
 body::after{
     content: "";
-    background: url(../images/global/right_piller.png) no-repeat;
-    width: 348px;
-    height: 5500px;
+    width: 349px;
+    height: calc(100%);
     z-index: 1;
     right: 0;
-    background-size: calc(100%) calc(100%);
+    // background-size: calc(100%) calc(100%);
+    // background-size: auto calc(100%);
     top: 0;
     position: absolute;
+}
+
+body.home::before{
+    background: url(../images/global/left_piller.png) no-repeat;
+}
+body.home::after{
+    background: url(../images/global/right_piller.png) no-repeat;
+}
+body.history::before, body.contactus::before, body.dengiPage::before, body.galleryPage::before{
+    background: url(../images/global/left_piller1.png) no-repeat;
+    background-size: calc(100%) calc(100%);
+}
+
+body.aboutus::before{
+    background: url(../images/aboutus/left_piller.png) no-repeat;
+    background-size: calc(100%) calc(100%);
+}
+body.aboutus::after{
+    background: url(../images/aboutus/right_piller.png) no-repeat;
+    background-size: calc(100%) calc(100%);
+}
+body.history::after, body.contactus::after, body.dengiPage::after, body.galleryPage::after{
+    background: url(../images/global/right_piller1.png) no-repeat;
+    background-size: calc(100%) calc(100%);
 }
