@@ -151,63 +151,52 @@ $(function(){
 
 
      if(pageName=='gallery.html'){
-        // $(document).ready( function(){
- 
-        // $.getJSON('data_image.json', function(data) {
-            // console.log('1');
-            // console.log(data_image.json);
-            // for (var i in data.images) {
-            //         var output+=data.gallery_page[i].src; // Place image in variable output
-            //         document.getElementById(".images_gallery ul li").innerHTML=output;
-            // }
-              // $.each(data.images, function(i,f) {
-              //     $("ul").append("<li><img src="+f.url+" id='image'/><br/><span>Caption: "+f.caption+"</span></li>");
-              // });
-        // });
-        // var monkeyList = new List('test-list', {
-        //   valueNames: ['name'],
-        //   page: 3,
-        //   pagination: true
-        // });
-
-        //get the images d into the li
-        // alert('1');
-        $(document).ready( function(){
-          $("#lightgallery").lightGallery(); 
-        $.getJSON('../data_image.json', function(data) { // Get data from JSON file
-            // alert('2');
-             // try{
-             //  var json = $.parseJSON(data);
-             //  for (var i =0; i< json.gallery_page_1.length; i++) {
-             //    var output+=json.gallery_page_1[i].src; // Place image in variable output
-             // }
-             //  document.getElementById(".images_gallery ul li").innerHTML=output;
-             // }catch{}
-             // var b=data.images.length;
-             // console.log(b);
-            //  for(var i=0;i<images.length; i++){
-            //     images.gallery_page_(i).forEach( function(obj) {
-            //      $(".images_gallery ul").append("<li><img src='" + f.src + 
-            //                    "' / > Caption: " + 
-            //                    f.alt 
-            //                    + " </li>");
-            // });   
-            //  }
-             
-            // for(i=0;i<data.images.length;i++){
-            //     var a=data.images.length;
-
-            // }
-            // $('.images_gallery ul li a img').colorbox();
-            $.each(data.images, function (i, f) {
-                $(".images_gallery ul").append("<li class='col-md-4' data-src='" + f.src + "'><a href=''><img src='" + f.src + 
-                               "' alt ='" + f.alt + 
-                               "' / ></a></li>");
-            });
-             console.log(this);
-            }); 
-    });
         
+        $(document).ready(function() {
+        $.getJSON('../data_image.json', function(data) {
+            for(i=0;i<9;i++){
+                  $(".images_gallery ul").append("<li class='col-md-4' data-src='" + data.images[i].src + "'><img src='" + data.images[i].src + "' alt ='" + data.images[i].alt + "' / ></li>");
+            }
+            lightData();
+
+            $('.images_nav span').click(function(){
+                $(".images_gallery ul").empty();
+                $('.images_nav span').removeClass('active');
+                var click_id=this.id;
+                $('#'+click_id).addClass('active');
+                imageData(click_id);
+                
+                // setTimeout(function(){
+                //     lightData();
+                //     alert('hi');
+                // }, 500);
+                    // }
+                    // $.each(b, function (i, f) {
+                    // $(".images_gallery ul").append("<li class='col-md-4' data-src='" + f.src + "'><img src='" + f.src + "' alt ='" + f.alt + "' / ></li>");
+                    // });
+
+
+                });
+                 // lightData();
+            });
+
+
+            // $.getJSON('../data_image.json', function(data) {
+            //     $.each(data.images, function (i, f) {
+            //         $(".images_gallery ul").append("<li class='col-md-4' data-src='" + f.src + "'><img src='" + f.src + "' alt ='" + f.alt + "' / ></li>");
+            //     });
+            // });
+
+            setTimeout(function(){
+                alert('hi');
+                $('#lightGallery').lightGallery({
+                    showThumbByDefault:true,
+                    addClass:'showThumbByDefault'
+                }); 
+            }, 500);
+            // lightData();
+
+          });
     }
 
  });
@@ -445,3 +434,35 @@ function init() {
  // Map code goes here
 
 
+function imageData(clickID){
+    $.getJSON('../data_image.json', function(data) {
+ // get json data
+                var a=clickID.split('_')[1];
+                console.log('a='+ a);
+               
+                // $.getJSON('../data_image.json', function(data) {
+                     // var b='data.images_' + a;
+                //      var c=b.length;
+                // console.log(c);
+                    var b = a * 9 - 9;
+                    console.log('b='+ b);
+                        if(b<=data.images.length){
+                            do{
+                                $(".images_gallery ul").append("<li class='col-md-4' data-src='" + data.images[b].src + "'><img src='" + data.images[b].src + "' alt ='" + data.images[b].alt + "' / ></li>");
+
+                                b++;
+                            }while(b%9 != 0);
+                           
+                        }   
+
+                    });
+}
+
+function lightData(){
+    alert('hi');
+        $('#lightGallery').lightGallery({
+                    showThumbByDefault:true,
+                    addClass:'showThumbByDefault'
+                });    
+    
+}

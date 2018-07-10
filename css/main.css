@@ -12552,20 +12552,30 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   list-style: none;
 }
 .galleryPage .galleryBody .gallery_div .images_gallery ul li {
-  padding: 10px;
+  padding: 10px 10px;
+  z-index: 3;
+  margin: 20px 45px;
+  width: 270px;
+  position: relative;
+  height: 270px;
 }
-.galleryPage .galleryBody .gallery_div .images_gallery ul li a {
-  display: inline-block;
-  padding: 2px;
-  margin: 0 0.5rem 1rem 0.5rem;
-  background-color: #fff;
-  line-height: 0;
-  border-radius: 4px;
-  transition: background-color 0.5s ease-out;
-}
-.galleryPage .galleryBody .gallery_div .images_gallery ul li a img {
+.galleryPage .galleryBody .gallery_div .images_gallery ul li img {
+  z-index: 1;
   width: 250px;
-  border-radius: 4px;
+}
+.galleryPage .galleryBody .gallery_div .images_gallery .images_nav {
+  display: inline-block;
+  width: 100%;
+  margin: 50px 0;
+  text-align: center;
+}
+.galleryPage .galleryBody .gallery_div .images_gallery .images_nav span {
+  width: 40px;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 0 8px;
+  cursor: pointer;
 }
 
 .history .historyBody .header_div {
