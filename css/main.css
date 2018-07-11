@@ -12109,39 +12109,69 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .home .homeBody .carousel .carousel-control.right, .home .homeBody .carousel .carousel-control.left {
   background: none;
 }
-.home .c-slide {
+.home .homeBody .upcoming_event {
+  text-align: center;
+}
+.home .homeBody .upcoming_event .upcoming_event_header_title {
+  font-size: 30px;
+  font-weight: bold;
+  color: red;
+  margin: 100px 0 50px;
+}
+.home .homeBody .upcoming_event .upcoming_event_header_title img {
+  width: 150px;
+  height: auto;
+}
+.home .homeBody .upcoming_event .upcoming_event_header_title img.title_left {
+  padding-right: 30px;
+  margin-top: -9px;
+}
+.home .homeBody .upcoming_event .upcoming_event_header_title img.title_right {
+  padding-left: 30px;
+  margin-top: -9px;
+}
+.home .homeBody .upcoming_event ul.upcoming_event_list {
+  list-style: none;
+}
+.home .homeBody .upcoming_event ul.upcoming_event_list li span .cal_img {
+  display: inline-block;
+}
+.home .homeBody .upcoming_event ul.upcoming_event_list li p {
+  display: inline-block;
+}
+.home .homeBody .c-slide {
   width: 90%;
   height: auto;
   margin: 150px auto;
   overflow: hidden;
   position: relative;
 }
-.home .slider-nav .slick-slide {
+.home .homeBody .slider-nav .slick-slide {
   display: block;
   height: 350px;
   text-align: center;
 }
-.home .slider-nav.slick-initialized .slick-slide {
+.home .homeBody .slider-nav.slick-initialized .slick-slide {
   display: inline-block;
 }
-.home .slider-thumbs {
+.home .homeBody .slider-thumbs {
   display: none;
 }
-.home .slider-thumbs.slick-initialized {
+.home .homeBody .slider-thumbs.slick-initialized {
   display: block;
 }
-.home .slider-thumbs.slick-initialized .slick-track {
+.home .homeBody .slider-thumbs.slick-initialized .slick-track {
   position: relative;
 }
-.home .slider-thumbs.slick-initialized .slick-list {
+.home .homeBody .slider-thumbs.slick-initialized .slick-list {
   margin: 20px -15px;
 }
-.home .slider-thumbs.slick-initialized .slick-slide {
+.home .homeBody .slider-thumbs.slick-initialized .slick-slide {
   display: inline-block;
   float: none;
   margin: 20px 15px;
 }
-.home .slider-thumbs.slick-initialized .slick-slide {
+.home .homeBody .slider-thumbs.slick-initialized .slick-slide {
   height: auto;
   max-width: 100%;
   outline: none;
@@ -12150,7 +12180,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   width: 170px;
   height: 170px;
 }
-.home .pre {
+.home .homeBody .pre {
   width: 25px !important;
   position: absolute;
   top: 0;
@@ -12159,7 +12189,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   z-index: 2;
   margin: auto;
 }
-.home .next {
+.home .homeBody .next {
   width: 25px !important;
   position: absolute;
   top: 0;
@@ -12168,28 +12198,28 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   z-index: 2;
   margin: auto;
 }
-.home .event_guest_div {
+.home .homeBody .event_guest_div {
   position: relative;
 }
-.home .event_guest_div .eventCarousal, .home .event_guest_div .guestCarousal {
+.home .homeBody .event_guest_div .eventCarousal, .home .homeBody .event_guest_div .guestCarousal {
   max-width: 1000px;
   margin: 0 auto;
   overflow: hidden;
   padding: 0;
   top: 60px;
 }
-.home .event_guest_div .divider {
+.home .homeBody .event_guest_div .divider {
   background: url(../images/homepage/guest_event_divider.png) no-repeat;
   height: 437px;
   background-position: center;
 }
-.home .event_guest_div .slick-slide {
+.home .homeBody .event_guest_div .slick-slide {
   margin: 0 5px;
 }
-.home .event_guest_div .slick-list {
+.home .homeBody .event_guest_div .slick-list {
   margin: 0px -5px 0px -5px;
 }
-.home .event_guest_div button.slick-next, .home .event_guest_div button.slick-next:hover {
+.home .homeBody .event_guest_div button.slick-next, .home .homeBody .event_guest_div button.slick-next:hover {
   position: absolute;
   top: 41%;
   right: 0px;
@@ -12200,7 +12230,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   z-index: 2;
   background-position: center;
 }
-.home .event_guest_div button.slick-prev, .home .event_guest_div button.slick-prev:hover {
+.home .homeBody .event_guest_div button.slick-prev, .home .homeBody .event_guest_div button.slick-prev:hover {
   position: absolute;
   top: 41%;
   left: 0px;
@@ -12213,12 +12243,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   background-position: center;
   z-index: 2;
 }
-.home .event_guest_div .slick-prev:before, .home .event_guest_div .slick-next:before {
+.home .homeBody .event_guest_div .slick-prev:before, .home .homeBody .event_guest_div .slick-next:before {
   font-size: 70px;
   line-height: inherit;
   font-weight: bold;
 }
-.home .event_guest_div .eventCarousal img, .home .event_guest_div .guestCarousal img {
+.home .homeBody .event_guest_div .eventCarousal img, .home .homeBody .event_guest_div .guestCarousal img {
   height: 324px;
 }
 

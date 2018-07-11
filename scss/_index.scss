@@ -50,9 +50,50 @@
               background: none;
           }
         }
-    }
     // header carousal end here
+    
+    // event code here
+    .upcoming_event{
+        text-align: center;
+        .upcoming_event_header_title{
+            font-size: 30px;
+            font-weight: bold;
+            color: red;
+            margin: 100px 0 50px;
+               img {
+                  width: 150px;
+                  height: auto;
+                    &.title_left {
+                        padding-right: 30px;
+                        margin-top: -9px;
+                    }
+                    &.title_right {
+                        padding-left: 30px;
+                        margin-top: -9px;
+                    }
+                }
+        }
+        ul.upcoming_event_list{
+            list-style: none;
+            li{
+                span{
+                    .cal_img{
+                      display: inline-block;
+                    }
+                }
+                p{  
+                    display: inline-block;
+                    .upcoming_event_title{
 
+                    }
+                    .upcoming_event_date{
+
+                    }
+                }
+            }
+        }
+    }
+    // event code end here
 
 
     // Mix gallery Slick Carousal
@@ -193,7 +234,7 @@
     }
 
     // Event and guest slick carousal
-
+  }
 }
 
 
