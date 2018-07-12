@@ -14,7 +14,6 @@
   font-style: normal;
 }
 body {
-  background: url(../images/global/body_background.png);
   height: auto;
   font-family: "SHREE-DEV7-0708";
   background-size: 100% auto;
@@ -42,31 +41,19 @@ body::after {
   position: absolute;
 }
 
-body.home::before {
-  background: url(../images/global/left_piller.png) no-repeat;
-}
-
-body.home::after {
-  background: url(../images/global/right_piller.png) no-repeat;
-}
-
 body.history::before, body.contactus::before, body.dengiPage::before, body.galleryPage::before {
-  background: url(../images/global/left_piller1.png) no-repeat;
   background-size: calc(100%) calc(100%);
 }
 
 body.aboutus::before {
-  background: url(../images/aboutus/left_piller.png) no-repeat;
   background-size: calc(100%) calc(100%);
 }
 
 body.aboutus::after {
-  background: url(../images/aboutus/right_piller.png) no-repeat;
   background-size: calc(100%) calc(100%);
 }
 
 body.history::after, body.contactus::after, body.dengiPage::after, body.galleryPage::after {
-  background: url(../images/global/right_piller1.png) no-repeat;
   background-size: calc(100%) calc(100%);
 }
 
@@ -12693,4 +12680,4 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   padding: 15px 0;
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=css/main.css.map */
